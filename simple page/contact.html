@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transition-style.css">
+    <link rel="stylesheet" href="css/collapse-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    <ul class="transition-up">
+        <li>
+            <a href="/index.html">
+                <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/about.html">
+                <div class="icon">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="About">About</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/services.html">
+                <div class="icon">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Services">Services</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/upload.html">
+                <div class="icon">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Portofolio">Portofolio</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/team.html">
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Team">Team</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/contact.html" class="transition-fade">
+                <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+        </li>
+        <li><div class="notif">
+            <div class="icon">
+                <i class="fa fa-bell" aria-hidden="true"></i>
+                <i class="fa fa-bell" aria-hidden="true" onclick="toggleNotif()"></i>
+            </div>
+            <div class="names"><span data-text="Notification">Notifications</span></div>
+            <div class="notif-box" id="box">
+                <h2>Notifications <span>17</span></h2>
+                <div class="notif-item">
+                    <img src="img/avatar1.png" alt="img">
+                    <div class="text">
+                       <h4>Nando</h4>
+                       <p>@lorem ipsum dolor sit amet</p>
+                    </div> 
+                </div>
+    
+                <div class="notif-item">
+                    <img src="img/avatar2.png" alt="img">
+                    <div class="text">
+                       <h4>Nando</h4>
+                       <p>@lorem ipsum dolor sit amet</p>
+                    </div> 
+                </div>
+    
+                <div class="notif-item">
+                    <img src="img/avatar3.png" alt="img">
+                    <div class="text">
+                       <h4>Nando</h4>
+                       <p>@lorem ipsum dolor sit amet</p>
+                    </div> 
+                </div>
+    
+                <div class="notif-item">
+                    <img src="img/avatar4.png" alt="img">
+                    <div class="text">
+                       <h4>Nando</h4>
+                       <p>@lorem ipsum dolor sit amet</p>
+                    </div> 
+                </div>
+            </div>
+        </div>  
+        </li>
+    </ul>
+    
+    <div class="accordion">
+        <button type="button" class="accordion__button">Expand</button>
+        <div class="accordion__content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec accumsan felis ac felis pharetra imperdiet. 
+                Phasellus turpis eros, porta congue nulla ut, lobortis posuere massa. Quisque in enim vitae elit scelerisque vulputate. 
+                Cras odio libero, sagittis quis pretium at, varius at neque. Integer nisl magna, dictum mattis commodo eget, imperdiet non arcu. 
+                Sed eget sodales tellus, ac viverra nulla. Nam mattis id turpis vel facilisis. In tempus tellus nunc, ut mattis nisi euismod at.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion__button').forEach(button=>{
+            button.addEventListener('click', ()=>{
+                button.classList.toggle('accordion__button--active');
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+</body>
+</html>

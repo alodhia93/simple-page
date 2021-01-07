@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+}
+ul{
+    margin: 0;
+    padding: 2px;
+    background : #12a9bd;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+ul li:last-child{
+    border-right: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+
+}
+ul li a:hover .icon .fa:last-child{
+    color: #e91e63;
+}
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+ul li a:hover .name span{
+    transform: translateY(20px);
+}
+ul li .notif .icon img {
+	display: inline-block;
+	width: 40px;
+	margin-top: 20px;
+}
+ul li .notif .notif-box {
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+	position: absolute;
+	top: 63px;
+	right: 35px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul li .notif .notif-box h2 {
+	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #999;
+}
+ul li .notif .notif-box h2 span {
+	color: #f00;
+}
+ul li .notif .notif-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 15px 5px;
+	margin-bottom: 15px;
+}
+ul li .notif .notif-item:hover {
+	background-color: #eee;
+}
+ul li .notif .notif-item img {
+	display: block;
+	width: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+ul li .notif .notif-item .text h4 {
+	color: #777;
+	font-size: 16px;
+	margin-top: 10px;
+}
+ul li .notif .notif-item .text p {
+	color: #aaa;
+	font-size: 12px;
+}
+ul li .notif .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    cursor: pointer;
+}
+ul li .notif .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+
+}
+ul li .notif:hover .icon .fa:last-child{
+    color: #e91e63;
+}
+ul li .notif:hover .icon .fa{
+    transform: translateY(-100%);
+}
+ul li .notif .names{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+ul li .notif .names span{
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+ul li .notif .names span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+ul li .notif:hover .names span{
+    transform: translateY(20px);
+}
+ul li .notif{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+.tabs {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:500px;
+    height:250px;
+    background:#f5f5f5;
+    padding:20px 30px;
+    overflow:hidden;
+    border-radius:50px;
+    box-shadow:5px 10px 5px #ccc;
+  }
+  .tabs .tab-header {
+    height:60px;
+    display:flex;
+    align-items:center;
+  }
+  .tabs .tab-header > div {
+    width:calc(100% / 3);
+    text-align:center;
+    color:#888;
+    font-weight:600;
+    cursor:pointer;
+    font-size:14px;
+    text-transform:uppercase;
+    outline:none;
+  }
+  .tabs .tab-header > div > i {
+    display:block;
+    margin-bottom:5px;
+  }
+  .tabs .tab-header > div.active {
+    color:#00acee;
+  }
+  .tabs .tab-indicator {
+    position:relative;
+    width:calc(100% / 3);
+    height:5px;
+    background:#00acee;
+    left:0px;
+    border-radius:5px;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-body {
+    position:relative;
+    height:calc(100% - 60px);
+    padding:10px 5px;
+  }
+  .tabs .tab-body > div {
+    position:absolute;
+    top:-200%;
+    opacity:0;
+    transform:scale(0.9);
+    transition:opacity 500ms ease-in-out 0ms,
+      transform 500ms ease-in-out 0ms;
+  }
+  .tabs .tab-body > div.active {
+    top:0px;
+    opacity:1;
+    transform:scale(1);
+  }

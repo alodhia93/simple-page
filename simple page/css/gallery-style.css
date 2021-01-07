@@ -1,0 +1,10 @@
+.gallery{
+    margin: 10px;
+    
+}
+.gallery img{
+    width: 400px;
+    height: 250px;
+    padding: 5px;
+    object-fit: cover;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transition-style.css">
+    <link rel="stylesheet" href="css/upload-styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+</head>
+<body>
+    <ul class="transition-down">
+        <li>
+            <a href="/index.html">
+                <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/about.html">
+                <div class="icon">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="About">About</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/services.html">
+                <div class="icon">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Services">Services</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/upload.html">
+                <div class="icon">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Portofolio">Portofolio</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/team.html">
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Team">Team</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="/contact.html">
+                <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+        </li>
+        
+    </ul>
+    
+    <div class="container">
+        <div class="wrapper">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <div class="text">No file chosen</div>
+            </div>
+            
+            <div id="cancel-button">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="file-name">File name here</div>
+        </div>
+        <input type="file" id="default-button" hidden>
+        <button id="custom-button" onclick="defaultButtonActive()">Choose a file...</button>
+    </div>
+
+    <script src="js/script-upload.js"></script>
+    <script src="js/script.js"></script>
+    <script src="node_modules/swup/dist/swup.min.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+</body>
+</html>

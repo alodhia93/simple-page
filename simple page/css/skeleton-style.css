@@ -1,0 +1,30 @@
+
+.weather-card:empty {
+    height: 1500px;
+    width: 100%;
+    background-image: linear-gradient(#ccc, #ccc), 
+        linear-gradient(#ccc, #ccc);
+    background-size: 100% 100px, 45% 20%;
+    background-position:0 0, 50% 185px;
+    
+    background-repeat: no-repeat;
+}
+.weather-card:empty::after{
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to left, #92fe9d 0, #00c9ff);
+    background-size: 200% 200%;
+    animation: loadingGradient 5s infinite;
+}
+@keyframes loadingGradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: -200% 0%;
+    }
+}
