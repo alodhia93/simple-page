@@ -6,7 +6,6 @@
         linear-gradient(#ccc, #ccc);
     background-size: 100% 100px, 45% 20%;
     background-position:0 0, 50% 185px;
-    
     background-repeat: no-repeat;
 }
 .weather-card:empty::after{
